@@ -64,6 +64,10 @@ class Tela:
         self.entry_final = tk.Entry(self.nossaTela, font=("Arial", 14), state='readonly')
         self.entry_final.pack(pady=5)
 
+        # Botão para acionar a nota 
+        self.button = tk.Button(self.nossaTela, text="Salvar Nota", font=("Verdana", 12), relief='raised', command=self.resposta)
+        self.button.pack(pady=20)
+
         # Dicionário para armazenar as notas por área
         self.nota_areas = {}
 
